@@ -15,7 +15,6 @@ export class DishService {
   getDish(id: string): Dish {
     return DISHES.filter((dish) => (dish.id === id))[0];
   }
-
   getFeaturedDish(): Dish {
     return DISHES.filter((dish) => dish.featured)[0];
   }
